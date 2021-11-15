@@ -1,17 +1,9 @@
-import './Wall.css'
 import { useState, useEffect } from 'react'
 import _ from 'lodash'
-import {
-    lion,
-    water,
-    twoReeds,
-    twistedFlax,
-    eyeOfHorus,
-    hornedViper
-} from './questions'
+import { wallQuestions } from './questions'
 
-export default function Wall(){
-    const [wallData, setWallData] = useState(_.shuffle(lion))
+export default function Wall({question}){
+    const [wallData, setWallData] = useState(_.shuffle(wallQuestions[question]))
     const [foundData, setFoundData] = useState([])
     const [selected, setSelected] = useState([])
     const [found, setFound] = useState([])

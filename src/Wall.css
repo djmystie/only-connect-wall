@@ -95,3 +95,19 @@ body {
 .button:hover {
     background-color: #7AA5C3;
 }
+.choiceContainer {
+    width: 800px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.choiceBox {
+    width: 240px;
+    height: 150px;
+    margin: 10px;
+    background-color: #8DBEE1;
+    border-radius: 10px;
+    cursor: pointer;
+}

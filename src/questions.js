@@ -1,42 +1,41 @@
-const lion = [
-    {id:0 , group: 1, title:"Stills"},
-    {id:1 , group: 1, title:"King"},
-    {id:2 , group: 1, title:"Fry"},
-    {id:3 , group: 1, title:"Curry"},
-    {id:4 , group: 2, title:"Talk"},
-    {id:5 , group: 2, title:"Potatoes"},
-    {id:6 , group: 2, title:"Pox"},
-    {id:7 , group: 2, title:"Scale"},
-    {id:8 , group: 3, title:"Roast"},
-    {id:9 , group: 3, title:"Grill"},
-    {id:10 , group: 3, title:"Bake"},
-    {id:11 , group: 3, title:"Boil"},
-    {id:12 , group: 4, title:"Steam"},
-    {id:13 , group: 4, title:"Life"},
-    {id:14 , group: 4, title:"Banana"},
-    {id:15 , group: 4, title:"Motor"},
-]
-
-const water = [
-    {id:0 , group: 1, title:"Killer"},
-    {id:1 , group: 1, title:"Spelling"},
-    {id:2 , group: 1, title:"Queen"},
-    {id:3 , group: 1, title:"Busy"},
-    {id:4 , group: 2, title:"Nick"},
-    {id:5 , group: 2, title:"Lift"},
-    {id:6 , group: 2, title:"Jack"},
-    {id:7 , group: 2, title:"Pinch"},
-    {id:8 , group: 3, title:"Net"},
-    {id:9 , group: 3, title:"King"},
-    {id:10 , group: 3, title:"Hornet"},
-    {id:11 , group: 3, title:"Bull"},
-    {id:12 , group: 4, title:"Ace"},
-    {id:13 , group: 4, title:"Break"},
-    {id:14 , group: 4, title:"Deuce"},
-    {id:15 , group: 4, title:"Love"},
-]
-
-const twoReeds = [
+const wallQuestions = { 
+        lion: [
+            {id:0 , group: 1, title:"Stills"},
+            {id:1 , group: 1, title:"King"},
+            {id:2 , group: 1, title:"Fry"},
+            {id:3 , group: 1, title:"Curry"},
+            {id:4 , group: 2, title:"Talk"},
+            {id:5 , group: 2, title:"Potatoes"},
+            {id:6 , group: 2, title:"Pox"},
+            {id:7 , group: 2, title:"Scale"},
+            {id:8 , group: 3, title:"Roast"},
+            {id:9 , group: 3, title:"Grill"},
+            {id:10 , group: 3, title:"Bake"},
+            {id:11 , group: 3, title:"Boil"},
+            {id:12 , group: 4, title:"Steam"},
+            {id:13 , group: 4, title:"Life"},
+            {id:14 , group: 4, title:"Banana"},
+            {id:15 , group: 4, title:"Motor"},
+        ],
+        water: [
+            {id:0 , group: 1, title:"Killer"},
+            {id:1 , group: 1, title:"Spelling"},
+            {id:2 , group: 1, title:"Queen"},
+            {id:3 , group: 1, title:"Busy"},
+            {id:4 , group: 2, title:"Nick"},
+            {id:5 , group: 2, title:"Lift"},
+            {id:6 , group: 2, title:"Jack"},
+            {id:7 , group: 2, title:"Pinch"},
+            {id:8 , group: 3, title:"Net"},
+            {id:9 , group: 3, title:"King"},
+            {id:10 , group: 3, title:"Hornet"},
+            {id:11 , group: 3, title:"Bull"},
+            {id:12 , group: 4, title:"Ace"},
+            {id:13 , group: 4, title:"Break"},
+            {id:14 , group: 4, title:"Deuce"},
+            {id:15 , group: 4, title:"Love"},
+        ],
+        twoReeds: [
     {id:0 , group: 1, title:"John"},
     {id:1 , group: 1, title:"Throne"},
     {id:2 , group: 1, title:"Pot"},
@@ -53,9 +52,7 @@ const twoReeds = [
     {id:13 , group: 4, title:"Sarge"},
     {id:14 , group: 4, title:"Jessie"},
     {id:15 , group: 4, title:"Buzz"},
-]
-
-const eyeOfHorus = [
+],eyeOfHorus: [
     {id:0 , group: 1, title:"Tiana"},
     {id:1 , group: 1, title:"Belle"},
     {id:2 , group: 1, title:"Mulan"},
@@ -72,8 +69,7 @@ const eyeOfHorus = [
     {id:13 , group: 4, title:"Popular Vote"},
     {id:14 , group: 4, title:"Rapunzel"},
     {id:15 , group: 4, title:"Discontinue"},
-]
-const twistedFlax = [
+],twistedFlax: [
     {id:0 , group: 1, title:"Ton"},
     {id:1 , group: 1, title:"Ounce"},
     {id:2 , group: 1, title:"Stone"},
@@ -90,8 +86,8 @@ const twistedFlax = [
     {id:13 , group: 4, title:"Port"},
     {id:14 , group: 4, title:"Marketing"},
     {id:15 , group: 4, title:"Phone"},
-]
-const hornedViper = [
+],
+hornedViper: [
     {id:0 , group: 1, title:"Gabriel"},
     {id:1 , group: 1, title:"Griffin"},
     {id:2 , group: 1, title:"Rabbit"},
@@ -109,12 +105,7 @@ const hornedViper = [
     {id:14 , group: 4, title:"Hydra"},
     {id:15 , group: 4, title:"Cobra"},
 ]
-
+}
 export {
-    lion,
-    water,
-    twoReeds,
-    twistedFlax,
-    eyeOfHorus,
-    hornedViper
+    wallQuestions
 }
