@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import _ from 'lodash'
 import { wallQuestions } from './questions'
 
-export default function Wall({question}){
+export default function Wall({question, setQuestion}){
     const [wallData, setWallData] = useState(_.shuffle(wallQuestions[question]))
     const [foundData, setFoundData] = useState([])
     const [selected, setSelected] = useState([])
@@ -88,10 +88,12 @@ export default function Wall({question}){
         )
     }
 
-    const Resolve = () => <div className="lives"><div className="button" onClick={()=>resolveWall()}>Resolve Wall</div></div>
+    const Resolve = () => <div className="lives"><div className="button" onClick={()=>found.length===4 ? setQuestion(false) : resolveWall()}>{found.length===4 ? "Back" : "Resolve Wall"}</div></div>
+
+    const Back = () => <div className="lives"><div className="button" onClick={()=>setQuestion(false)}>Back</div></div>
 
     return (
-        <div className="wallContainer">
+        
             <div>
         <div className="wall">
             {foundData.map((data)=>(
@@ -102,10 +104,10 @@ export default function Wall({question}){
             ))}
         </div>
         <div className="bottomContainer">
-            {startWall ? lives === 0 || clock === 0 ? <Resolve /> : <DisplayLives /> : <StartGame />}
+            {startWall ? lives === 0 || clock === 0 ? <Resolve /> : found.length === 4 ? <Back /> : <DisplayLives /> : <StartGame />}
             <Timer />
         </div>
         </div>
-        </div>
+       
     )
 }

@@ -1,4 +1,4 @@
-export default function QuestionChoice({setQuestion}) {
+export default function QuestionChoice({setQuestion, usedQuestions}) {
 
     const choices = [
         "twoReeds",
@@ -10,12 +10,11 @@ export default function QuestionChoice({setQuestion}) {
     ]
 
     return (
-        <div className="wallContainer">
+        
         <div className="choiceContainer">
             {choices.map(choice=> (
-                <div className="choiceBox"style={{ backgroundImage: `url(/${choice}.png)` }} onClick={()=>setQuestion(choice)} />
+                <div className={usedQuestions.includes(choice) ? "choiceBox used" : "choiceBox"} style={{ backgroundImage: `url(/${choice}.png)` }} onClick={()=>usedQuestions.includes(choice) ? null : setQuestion(choice)} />
             ))}
-        </div>
         </div>
     )
 }
