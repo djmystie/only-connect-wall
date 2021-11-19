@@ -35,6 +35,12 @@ const roundOne= {
         {id:2, title: "Selling a broken laser pointer"},
         {id:4, title: "Harvard version of 'Hot or Not'"},
     ],
+    demo: [
+        {id:0, title: "Photon"},
+        {id:2, title: "White Corners"},
+        {id:3, title: "Switzerland"},
+        {id:4, title: "Gearbox disconnected from transmission"},
+    ]
 }
 
 const roundTwo= {
@@ -74,6 +80,12 @@ const roundTwo= {
         {id:2, title: "Canberra"},
         {id:4, title: "Wellington"},
     ],
+    demo: [
+        {id:0, title: "Move MS Word Scrollbar left"},
+        {id:1, title: "Bleaching Allowed"},
+        {id:2, title: "Play"},
+        {id:3, title: "Yield"},
+    ]
 }
 const wallQuestions = {
     lion: [
@@ -184,6 +196,24 @@ const wallQuestions = {
       { id: 14, group: 4, title: "Hydra" },
       { id: 15, group: 4, title: "Cobra" },
     ],
+    demo: [
+        { id: 0, group: 1, title: "Spanner" },
+        { id: 1, group: 1, title: "Dagger" },
+        { id: 2, group: 1, title: "Candlestick" },
+        { id: 3, group: 1, title: "Revolver" },
+        { id: 4, group: 2, title: "Rope" },
+        { id: 5, group: 2, title: "Rear Window" },
+        { id: 6, group: 2, title: "Vertigo" },
+        { id: 7, group: 2, title: "Psycho" },
+        { id: 8, group: 3, title: "Bascule" },
+        { id: 9, group: 3, title: "Humpback" },
+        { id: 10, group: 3, title: "Swing" },
+        { id: 11, group: 3, title: "Suspension" },
+        { id: 12, group: 4, title: "Killer" },
+        { id: 13, group: 4, title: "Sperm" },
+        { id: 14, group: 4, title: "Minke" },
+        { id: 15, group: 4, title: "Beluga" },
+      ],
   };
 
   const missingVowels = {
@@ -239,6 +269,15 @@ const wallQuestions = {
         {question: "DSP PNT DBTR LVDFC", answer: "DISAPPOINTED BUT RELIEVED FACE"},
         {question: "RLLN GNTH FLR LGHN G", answer: "ROLLING ON THE FLOOR LAUGHING"},
         {question: "SM RKN GFC", answer: "SMIRKING FACE"},
+        ]
+    },
+    demo: {
+        title: "Apple Locations",
+        phrases: [
+        {question: "HRM SAC RT", answer: "HERMOSA COURT"},
+        {question: "PP LP RK", answer: "APPLE PARK"},
+        {question: "BB BRD", answer: "BUBB ROAD"},
+        {question: "WL FR D", answer: "WOLFE ROAD"},
         ]
     },
   }
